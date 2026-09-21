@@ -16,7 +16,7 @@ public class UserController {
 //    private UserService userService;
 //
 //    @GetMapping("/{id}")
-//    public ResponseEntity<User> findById(@PathVariable Long id) {
+//    public ResponseEntity<User> findById(@PathVariable String id) {
 //        User obj = this.userService.findById(id);
 //        return ResponseEntity.ok().body(obj);
 //    }
@@ -31,7 +31,7 @@ public class UserController {
 //    }
 //
 //    @PutMapping("/{id}")
-//    public ResponseEntity<Void> update(@Valid @RequestBody UserUpdateDTO obj, @PathVariable Long id) {
+//    public ResponseEntity<Void> update(@Valid @RequestBody UserUpdateDTO obj, @PathVariable String id) {
 //        obj.setId(id);
 //        User user = this.userService.fromDTO(obj);
 //        this.userService.update(user);
@@ -39,7 +39,7 @@ public class UserController {
 //    }
 //
 //    @DeleteMapping("/{id}")
-//    public ResponseEntity<Void> delete(@PathVariable Long id) {
+//    public ResponseEntity<Void> delete(@PathVariable String id) {
 //        this.userService.delete(id);
 //        return ResponseEntity.noContent().build();
 //    }

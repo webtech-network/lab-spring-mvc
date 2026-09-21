@@ -14,7 +14,7 @@ public class AssetController {
     @GetMapping
     public ResponseEntity getAssets() {
         Asset asset = new Asset ();
-        asset.setId(1);
+        asset.setId("1");
         asset.setTicker("AAPL");
         asset.setDescription("Apple Inc.");
         return ResponseEntity.ok(asset);

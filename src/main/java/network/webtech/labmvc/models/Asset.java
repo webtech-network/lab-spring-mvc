@@ -1,23 +1,19 @@
 package network.webtech.labmvc.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name = "tbl_assets")
+@Document(collection = "tbl_assets")
 public class Asset {
 
     @Id
-    @GeneratedValue
-    private Integer id;
+    private String id;
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
