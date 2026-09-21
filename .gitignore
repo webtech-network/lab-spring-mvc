@@ -90,3 +90,4 @@ nb-configuration.xml
 *.log
 
 atlas-credentials.env
+CLAUDE.md
